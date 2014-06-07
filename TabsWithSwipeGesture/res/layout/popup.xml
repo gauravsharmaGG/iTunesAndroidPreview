@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_element"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.Dialog" >
+
+    <ProgressBar
+        android:id="@+id/imgProgress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+    
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="59dp"
+        android:ems="10"
+        android:hint="Filename to Search"
+        android:textColorHint="#000000" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="Set Limit of Result"
+        android:textColorHint="#000000" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_close_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText2"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="21dp"
+        android:text="Submit"
+        android:textColor="#ffffff"
+        android:textColorHint="#ff00ff" />
+    
+</RelativeLayout>
